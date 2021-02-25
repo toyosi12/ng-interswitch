@@ -1,0 +1,11 @@
+{
+  "name": "ng-interswitch",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^9.1.13",
+    "@angular/core": "^9.1.13"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
+  }
+}

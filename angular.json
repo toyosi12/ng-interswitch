@@ -119,6 +119,46 @@
           }
         }
       }
+    },
+    "ng-interswitch": {
+      "projectType": "library",
+      "root": "projects/ng-interswitch",
+      "sourceRoot": "projects/ng-interswitch/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-interswitch/tsconfig.lib.json",
+            "project": "projects/ng-interswitch/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-interswitch/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-interswitch/src/test.ts",
+            "tsConfig": "projects/ng-interswitch/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-interswitch/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-interswitch/tsconfig.lib.json",
+              "projects/ng-interswitch/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "angular-interswitch"
 }

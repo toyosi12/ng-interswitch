@@ -3,12 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { NgInterswitchModule } from 'ng-interswitch'
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgInterswitchModule
   ],
   providers: [],
   bootstrap: [AppComponent]
