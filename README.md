@@ -8,6 +8,7 @@
 
 ## INSTALLATION
 
+Firstly, you need to create a [**Quickteller Business**](https://business.quickteller.com) account
 npm and angular2+ are required
 
 To install the latest version of ng-interswitch, simply run the command:
@@ -73,6 +74,9 @@ You can hence define **paymentOptions** in your ts file like so:
     customerName: 'Toyosi Oyelayo'
   }
 ```
+
+**merchantCode** and **payItemID** can be found on your dashboard.
+
 The event **paymentCallback** is raised after a transaction is completed. You can get the result of a transaction from the event handler assigned to it. A sample event handler will be like so:
 ```ts
   paymentCallback(data){
