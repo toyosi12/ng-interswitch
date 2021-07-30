@@ -47,7 +47,7 @@ The **ng-interswitch** component is used. There are two ways to configure the co
 <ng-interswitch
   [merchantCode]="'XXXXXXX'"
   [payItemID]="'XXXXXXXXXXXXXXXXXXXXX'"
-  [amount]="'1000'"
+  [amount]="1000"
   [customerEmail]="'toyosioyelayo@gmail.com'"
   [customerName]="'Toyosi Oyelayo'"
   (paymentCallback)="paymentCallback($event)"
